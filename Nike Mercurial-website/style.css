@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
@@ -14,25 +15,29 @@
 
 nav {
   display: flex;
-   padding: 30px 8%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8%;
   position: fixed;
-  top: 0;
+  top: 25;
   width: 100%;
   background-color: #1e2227;
-  }
+  z-index: 1;
+}
 
 .logo {
-  width: 120px;
+  width: 50px;
   cursor: pointer;
 }
 
 nav .nav-links {
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 nav .nav-links a {
-   color: #fff;
+  text-decoration: none;
+  color: #fff;
   font-size: 26px;
 }
 
@@ -47,6 +52,7 @@ nav .nav-links a {
   flex-basis: 50%;
   height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -61,18 +67,19 @@ nav .nav-links a {
 }
 
 .col-1 h1 {
-  font-size: 74px;
+  font-size: 75px;
   line-height: 100px;
   margin-bottom: 5px;
 }
 
 .col-1 p {
   padding-right: 10px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .col-1 .price {
   display: flex;
+  align-items: flex-end;
   column-gap: 10px;
   margin-top: 10px;
 }
@@ -112,12 +119,12 @@ nav .nav-links a {
 }
 
 .feature-img {
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
 
 .feature-img img {
-  width: 80%;
+  width: 50%;
   transform: rotate(-20deg);
   transition: transform 0.5s;
 }
@@ -130,12 +137,14 @@ nav .nav-links a {
   display: flex;
   width: 80%;
   margin: 70px auto 0;
-  }
+  align-items: center;
+  justify-content: space-around;
+}
 
 .small-img {
   width: 80px;
   height: 80px;
-  background-color: #ccc;
+  background-color: rgb(17, 121, 1);
 }
 
 .small-img img {
@@ -149,11 +158,11 @@ nav .nav-links a {
 }
 
 .small-img:nth-child(1) {
-  background: #b9c8ff;
+  background: #776f6f;
 }
 
 .small-img:nth-child(2) {
-  background: #b1ffdd;
+  background: #15bda1;
 }
 
 .small-img:nth-child(3) {
@@ -166,8 +175,16 @@ nav .nav-links a {
 
 .col-2 h2 {
   position: absolute;
-  left: 10%;
-  top: 25%;
-  font-size: 130px;
-  opacity: 0.3;
+  left: 0%;
+  top: 28%;
+  font-size: 75px;
+  opacity: 0.5;
+}
+
+.col-2 h3 {
+  position: absolute;
+  left: 42%;
+  top: 28%;
+  font-size: 75px;
+  opacity: 0.5;
 }
